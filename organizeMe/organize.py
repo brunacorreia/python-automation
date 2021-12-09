@@ -2,16 +2,20 @@ import os
 from pathlib import Path
 
 SUBDIRECTORIES = {
-    "DOCUMENTS": ['.pdf', '.rtf', '.txt'],
-    "AUDIO": ['.m4a', '.m4b', '.mp3'],
-    "VIDEOS": ['.mov', '.avi', '.mp4'],
-    "IMAGES": ['.jpg', '.jpeg', '.png'],
+    "DOCUMENTS": ['.pdf','.rtf','.txt'],
+    "AUDIO": ['.m4a','.m4b','.mp3'],
+    "VIDEOS": ['.mov','.avi','.mp4'],
+    "IMAGES": ['.jpg','.jpeg','.png']
 }
 
 def pickDirectory(value):
+    print(f"value is {value}")
     for category, suffixes in SUBDIRECTORIES.items():
+        print(f"category is {category} and suffixes is {suffixes}")
         for suffix in suffixes:
+            print(f"suffix is {suffix}")
             if suffix == value:
+                print(f"suffix is {suffix}, value is {value}")
                 return category
     return 'MISC'
 print(pickDirectory('.pdf'))
