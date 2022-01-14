@@ -20,7 +20,7 @@ def pickDirectory(value):
     return 'MISC' # If filetype does not exist in the dictionary
 
 def organizeDirectory():
-    for item in os.scandir():
+    for item in os.scandir(): #will iterate through all the files inside a directory
         print(f"item is {item}")
         if item.is_dir():
             continue
