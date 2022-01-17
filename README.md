@@ -19,8 +19,8 @@ E-commerce Store - Link: https://scrapingclub.com/exercise/list_basic
 Tips:
 - When you encounter a webpage with pagination, it is important to avoid capturing multiple links that go to the same page, which will create duplicate data in the scraped output when scraping the data.
 
-# Web Browsing Automation
-Why automate?
+## Web Browsing Automation
+Why automate?<br>
 *Test Website Functionality*
 - Decreases cost and time
 - Provides round the clock testing
